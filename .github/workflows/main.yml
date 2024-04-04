@@ -17,8 +17,3 @@ jobs:
         ftp-server: ${{secrets.FTP_SERVER }}
         ftp-username: ${{secrets.FTP_USERNAME }}
         ftp-password: ${{secrets.FTP_PASSWORD }}
-
-    - name: Deploy to cPanel
-      run: |
-        chmod +x ./deploy.sh
-        ./deploy.sh
